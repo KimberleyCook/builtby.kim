@@ -3,7 +3,7 @@ title: Kimberley Cook
 job: Freelance Front-End Web Developer
 email: kc@builtby.kim
 url: builtby.kim
-description: "Kimberley Cook - freelance front-end developer."
+description: "Kimberley Cook - freelance front-end web developer."
 skills: "Web Developer • Organiser of codebar • Cyclist • Occasional boulderer • Wannabe badass snowboarder"
 meta_author: Cook Kimberley
 
@@ -13,11 +13,8 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
-# contact: static
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: UA-82996803-1
 
 # If you use disqus you need disqus shortname
 # https://help.disqus.com/customer/portal/articles/466208
