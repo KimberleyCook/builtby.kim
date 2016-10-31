@@ -2,7 +2,7 @@
 title: Kimberley Cook
 job: Freelance Front-End Web Developer
 email: kc@builtby.kim
-url: https://builtby.kim
+url: builtby.kim
 description: "Kimberley Cook - freelance front-end developer."
 skills: "Web Developer • Organiser of codebar • Cyclist • Occasional boulderer • Wannabe badass snowboarder"
 meta_author: Cook Kimberley
@@ -49,3 +49,11 @@ social:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
