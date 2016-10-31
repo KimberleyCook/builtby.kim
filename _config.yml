@@ -3,7 +3,7 @@ title: Kimberley Cook
 job: Freelance Front-End Web Developer
 email: kc@builtby.kim
 url: https://builtby.kim
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Kimberley Cook - freelance front-end developer."
 skills: "Web Developer • Organiser of codebar • Cyclist • Occasional boulderer • Wannabe badass snowboarder"
 meta_author: Cook Kimberley
 
@@ -45,11 +45,6 @@ social:
     url: http://github.com/KimberleyCook
   - title: instagram
     url: http://instagram.com/kimberleycook/
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
 
 # Build settings
 markdown: kramdown
