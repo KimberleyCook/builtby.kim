@@ -47,6 +47,10 @@ hr.dark {
     border-color: #{{ site.color.secondary }};
 }
 
+hr.white {
+    border-color: #fff;
+}
+
 .img-centered {
     margin: 0 auto;
 }
