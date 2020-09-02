@@ -1,36 +1,66 @@
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="dark">
-                </div>
+<!-- Portfolio Grid Section -->
+<section id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Portfolio</h2>
+        <hr class="dark" />
+      </div>
+    </div>
+    <div class="row">
+      {% for post in site.posts %}
+      <div class="col-sm-4 portfolio-item">
+        <a
+          href="#portfolioModal-{{ post.modal-id }}"
+          class="portfolio-link"
+          data-toggle="modal"
+        >
+          <div class="caption">
+            <div class="caption-content">
+              <img src="../img/see-more.svg" />
             </div>
-            <div class="row">
-              {% for post in site.posts %}
-                  <div class="col-sm-4 portfolio-item">
-                      <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
-                          <div class="caption">
-                              <div class="caption-content">
-                                  <img src="../img/see-more.svg">
-                              </div>
-                          </div>
-                          <img src="img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-                      </a>
-                  </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-              <div class="col-lg-10 col-lg-offset-1">
-                  <h4 class="text-center">Facebook Instant Articles / Apple News</h4>
-                  <p>Both of these platforms were released during my time at Shortlist Media. As a publisher they wanted to be at the forefront of digital publishing and it was my job to integrate them. These efforts were successful as 2 weeks after launching Facebook IA we saw a 120% growth in online traffic.</p>
-                  <h4 class="portfolio-heading">Prototyping</h4>
-                  <p>Part of my job as Creative Technologist at Shortlist Media was experimenting with new technologies and ideas. These included prototyping a potential React Native app for a live event. Also a project where we created a React site that generated articles from the top trending subreddits of the day.</p>
-                  <h4 class="portfolio-heading">Open Source</h4>
-                  <p>Part of my role as codebar organiser is maintaining the repos. Everything we have built is Open Source, from the planner to the tutorials. We encourage students to contribute and to help with this we run "24 Pull Requests" every December. I have also created tutorials and guides to aid new developers, such as several Intro to Python tutorials and an <a href="https://github.com/KimberleyCook/git-commands">everyday git command</a> guide.</p>
-              </div>
-            </div>
-        </div>
-    </section>
+          </div>
+          <img
+            src="img/portfolio/{{ post.img }}"
+            class="img-responsive"
+            alt="{{ post.alt }}"
+          />
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h4 class="portfolio-heading">Prototyping</h4>
+        <p>
+          A big part of my role as Creative Technologist at Shortlist Media was
+          experimenting with new technologies and ideas. These included
+          prototyping a potential React Native app for a live event. Also a
+          project where we created a React site that generated articles from the
+          top trending subreddits of the day.
+        </p>
+        <h4 class="text-center">Facebook Instant Articles / Apple News</h4>
+        <p>
+          Both of these platforms were released during my time at Shortlist
+          Media. As a publisher they wanted to be at the forefront of digital
+          publishing and it was my job to integrate them. These efforts were
+          successful as 2 weeks after launching Facebook IA we saw a 120% growth
+          in online traffic.
+        </p>
+        <h4 class="portfolio-heading">Open Source</h4>
+        <p>
+          Part of my role as codebar organiser is maintaining the repos.
+          Everything we have built is Open Source, from the planner to the
+          tutorials. We encourage students to contribute and to help with this
+          we run "24 Pull Requests" every December. I have also created
+          tutorials and guides to aid new developers, such as several Intro to
+          Python tutorials and an
+          <a href="https://github.com/KimberleyCook/git-commands"
+            >everyday git command</a
+          >
+          guide.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
